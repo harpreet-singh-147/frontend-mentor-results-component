@@ -18,6 +18,7 @@ const createResults = results => {
 
     const resultsIcon = document.createElement('img');
     resultsIcon.src = result.icon;
+    resultsIcon.alt = '';
 
     const resultStatText = document.createElement('p');
     resultStatText.classList.add('results__stat-text');
