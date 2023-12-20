@@ -16,6 +16,7 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
+  background-color: hsl(0, 0%, 97%);
 }
 
 .results-container {
@@ -23,6 +24,7 @@ body {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 3.5em;
   width: 700px;
+  background: #fff;
 }
 
 .results__result {
@@ -134,6 +136,7 @@ body {
 }
 
 .results__btn {
+  cursor: pointer;
   background: hsl(224, 30%, 27%);
   border: none;
   color: #fff;
@@ -141,6 +144,14 @@ body {
   font-weight: 600;
   padding: 1.8rem 2rem;
   border-radius: 5rem;
+}
+
+.results__btn:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
 }
 
 .attribution {
@@ -151,4 +162,11 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 768px) {
+  .results-container {
+    width: 98%;
+    margin: 0 auto;
+  }
 }
