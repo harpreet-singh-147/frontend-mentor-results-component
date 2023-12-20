@@ -1,5 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  font-family: 'Hanken Grotesk', sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.results-container {
+  display: flex;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 3.5em;
+  width: 700px;
+}
+
+.results__result {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 4.5em;
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 3.5em;
+  color: #fff;
+}
+
+.results__heading {
+  font-size: 2.2rem;
+  color: #faf1f1e3;
+}
+
+.results__score-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  text-align: center;
+}
+
+.results__score {
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.results__score-absolute {
+  font-size: 1.5em;
+  color: #e7e1e186;
+}
+
+.results__level {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.results__feedback {
+  width: 80%;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: -1.5rem;
+  color: #faf1f1e3;
+}
+
+.results__summary {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  flex: 1;
+  padding: 4.5em 4em;
+}
+
+.results__summary-heading {
+  font-size: 2.2rem;
+}
+
+.results__stats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.results__stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4em 1.6em;
+  border-radius: 1em;
+}
+
+.reaction {
+  color: hsl(234, 85%, 45%);
+  background: hsla(234, 85%, 45%, 0.071);
+}
+
+.results__stat-text-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.results__stat-score {
+  color: #0000009a;
+  font-size: 1.9rem;
+}
+
+.results__score-bold {
+  color: #000;
+}
+
+.results__btn {
+  background: hsl(224, 30%, 27%);
+  border: none;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 1.8rem 2rem;
+  border-radius: 5rem;
+}
+
 .attribution {
-  font-size: 11px;
+  position: absolute;
+  bottom: 2rem;
   text-align: center;
 }
 
