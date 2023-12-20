@@ -166,7 +166,74 @@ body {
 
 @media only screen and (max-width: 768px) {
   .results-container {
-    width: 98%;
+    width: 99%;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .results__result {
+    padding: 3.5em;
+  }
+
+  .results__summary {
+    padding: 3.5em 3em;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .results__result {
+    padding: 2.5em;
+  }
+
+  .results__summary {
+    padding: 2.5em 2em;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .results-container {
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 0;
+  }
+
+  .results__result {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .attribution {
+    bottom: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .results__feedback {
+    width: 95%;
+  }
+
+  .results__summary {
+    padding: 2.5em;
+  }
+
+  .results__stat {
+    padding: 1.4em 1.2em;
+  }
+
+  .results__stat-text-container {
+    font-size: 1.6rem;
+  }
+
+  .results__stat-score {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .results__feedback {
+    width: 100%;
+    font-size: 1.45rem;
   }
 }
