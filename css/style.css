@@ -44,6 +44,10 @@ body {
   color: #fff;
 }
 
+.results__header {
+  margin-top: -1em;
+}
+
 .results__heading {
   font-size: 2.2rem;
   color: #faf1f1e3;
